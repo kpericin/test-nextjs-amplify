@@ -15,7 +15,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div style={{padding: "20px"}}>This is a test
+          <div style={{ marginTop: "20px" }}>{children}</div>
+        </div>
+      </body>
     </html>
   )
 }
