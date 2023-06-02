@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div style={{padding: "20px"}}>This is a test
+        <div style={{padding: "20px"}}>This is a mirror test
           <div style={{ marginTop: "20px" }}>{children}</div>
         </div>
       </body>
