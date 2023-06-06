@@ -1,5 +1,6 @@
-import './globals.css'
 import { Inter } from 'next/font/google'
+import Providers from './providers'
+import "./globals.scss"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,9 +17,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div style={{padding: "20px"}}>This is a mirror test
-          <div style={{ marginTop: "20px" }}>{children}</div>
-        </div>
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
   )
